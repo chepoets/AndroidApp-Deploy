@@ -1,0 +1,282 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="10sp"
+    card_view:cardUseCompatPadding="true"
+    tools:context="com.dfp.android.iptvps.RaiFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/firstcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/adView">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="15dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/colorbar"
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:background="#F44336"
+                            android:layout_margin="10dp"/>
+
+                        <TextView
+                            android:id="@+id/titlecard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/colorbar"
+                            android:layout_margin="15dp"
+                            android:textSize="15sp"
+                            android:text="Sky Sport 1 HD"/>
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:text="Watch"
+                            android:enabled="true"
+                            android:layout_margin="10dp"
+                            android:onClick="skysport1hd"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secondcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstcard">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="15dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/colorbar2"
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:layout_margin="10dp"/>
+
+                        <TextView
+                            android:id="@+id/titlecard2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/colorbar2"
+                            android:layout_margin="15dp"
+                            android:textSize="15sp"
+                            android:text="Sky Sport 2 HD"/>
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:text="Watch"
+                            android:enabled="true"
+                            android:layout_margin="10dp"
+                            android:onClick="skysport2hd"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thirdcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondcard">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="15dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/colorbar3"
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:background="#FF9800"
+                            android:layout_margin="10dp"/>
+
+                        <TextView
+                            android:id="@+id/titlecard3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/colorbar3"
+                            android:layout_margin="15dp"
+                            android:textSize="15sp"
+                            android:text="Sky Sport 3 HD"/>
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:text="Watch"
+                            android:enabled="true"
+                            android:layout_margin="10dp"
+                            android:onClick="skysport3hd"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/fivethcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thirdcard">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="15dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/colorbar5"
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:background="#795548"
+                            android:layout_margin="10dp"/>
+
+                        <TextView
+                            android:id="@+id/titlecard5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/colorbar5"
+                            android:layout_margin="15dp"
+                            android:textSize="15sp"
+                            android:text="Sky Sport F1 HD"/>
+                        <Button
+                            android:id="@+id/button5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:text="Watch"
+                            android:enabled="true"
+                            android:layout_margin="10dp"
+                            android:onClick="skysportf1hd"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sixthcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fivethcard">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="5dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardMaxElevation="15dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/colorbar6"
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:background="#F8BBD0"
+                            android:layout_margin="10dp"/>
+
+                        <TextView
+                            android:id="@+id/titlecard6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/colorbar6"
+                            android:layout_margin="15dp"
+                            android:textSize="15sp"
+                            android:text="Sky Sport Plus HD"/>
+                        <Button
+                            android:id="@+id/button6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:text="Watch"
+                            android:enabled="true"
+                            android:layout_margin="10dp"
+                            android:onClick="skysportplushd"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">IPTV Free</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello IPTV Free!</string>
+    <string name="slide_1_desc">The easiest way to watch TV on the Smartphone!</string>
+    <string name="attention">ATTENTION: the app is created for illustration purposes only and is not intended to violate privacy or law for watching TV and pay TV channels. Continuing accept the terms</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Watch all the TV channels and Pay television comfortably on your smartphone</string>
+
+    <string name="slide_3_title">Great Design</string>
+    <string name="slide_3_desc">Few banner ads to enjoy the best possible app</string>
+
+    <string name="slide_4_title">Best Player</string>
+    <string name="slide_4_desc">Remember to install XMTV player to watch all channels</string>
+    <string name="download_it">Go to official site and download it</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+
+</resources>

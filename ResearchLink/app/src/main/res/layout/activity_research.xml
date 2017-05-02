@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_research"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.researchlink.dfp.researchlink.Research">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="10dp"
+            android:onClick="GymResearch">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="Educazione Fisica"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerHorizontal="true"/>
+                <ImageView
+                    android:id="@+id/copertina"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/description"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/student" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/two"
+            android:layout_below="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="10dp"
+            android:onClick="Inglese">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/description2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="Inglese"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerHorizontal="true"/>
+                <ImageView
+                    android:id="@+id/copertina2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/description2"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/home" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/three"
+            android:layout_below="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/description3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="Informatica"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerHorizontal="true"/>
+                <ImageView
+                    android:id="@+id/copertina3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/description3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mac" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mandarini"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="android.votailmandarino.dfp.votailmandarino.Mandarini">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/first_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/first_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mandarin" />
+
+                <TextView
+                    android:id="@+id/text_first"
+                    android:layout_toRightOf="@+id/first_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="1"
+                    android:textSize="60sp" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_toRightOf="@+id/text_first"
+                    android:layout_centerVertical="true"
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:background="@color/colorAccent"
+                    android:rotation="-45"
+                    android:layout_marginLeft="-34dp"/>
+
+                <CheckBox
+                    android:id="@+id/vota1"
+                    android:layout_toRightOf="@+id/divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vota"
+                    android:layout_marginTop="40dp"
+                    android:onClick="check1"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/second_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/second_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mandarin" />
+
+            <TextView
+                android:id="@+id/text_second"
+                android:layout_toRightOf="@+id/second_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:text="2"
+                android:textSize="60sp" />
+
+            <View
+                android:id="@+id/dividersecond"
+                android:layout_toRightOf="@+id/text_second"
+                android:layout_centerVertical="true"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:background="@color/colorAccent"
+                android:rotation="-45"
+                android:layout_marginLeft="-34dp"/>
+
+            <CheckBox
+                android:id="@+id/vota2"
+                android:layout_toRightOf="@+id/dividersecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vota"
+                android:layout_marginTop="40dp"
+                android:onClick="check2"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/third_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/third_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mandarin" />
+
+                <TextView
+                    android:id="@+id/text_third"
+                    android:layout_toRightOf="@+id/third_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="3"
+                    android:textSize="60sp" />
+
+                <View
+                    android:id="@+id/dividerthird"
+                    android:layout_toRightOf="@+id/text_third"
+                    android:layout_centerVertical="true"
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:background="@color/colorAccent"
+                    android:rotation="-45"
+                    android:layout_marginLeft="-34dp"/>
+
+                <CheckBox
+                    android:id="@+id/vota3"
+                    android:layout_toRightOf="@+id/dividerthird"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vota"
+                    android:layout_marginTop="40dp"
+                    android:onClick="check3"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orange">
+
+        <Button
+            android:id="@+id/send_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:text="Invia voto"
+            android:theme="@style/Button"
+            android:onClick="invia"/>
+    </RelativeLayout>
+</LinearLayout>

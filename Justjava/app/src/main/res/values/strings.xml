@@ -1,0 +1,51 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Just java</string>
+
+    <!--translation strings-->
+    <!--title-->
+    <string name="title">Coffee Break</string>
+
+    <!--header name for toppings-->
+    <string name="toppings">Toppings</string>
+
+    <!--message for order summary-->
+    <string name="thank_you">Thank you!</string>
+
+    <!--user_name hint translation-->
+    <string name="name">Name</string>
+
+    <!--toppings-->
+        <!--whippead cream-->
+    <string name="Whipped_Cream">Whipped Cream</string>
+    <string name="Chocolate">Chocolate</string>
+
+    <!--quantity-->
+    <string name="quantity">Quantity</string>
+
+    <!--order summary-->
+    <string name="Order_Summary">Order Summary</string>
+
+    <!--message-->
+    <string name="message">1 normal cup of tea coast 5$</string>
+
+    <!--moneta-->
+    <string name="moneta">$0</string>
+
+    <!--order-->
+    <string name="order">Order</string>
+
+    <!--send order-->
+    <string name="send_order">Send Order</string>
+
+    <!--user_name no translation-->
+    <string name="user_name">Name: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+
+    <!-- total price-->
+    <string name="total_price">Total price: </string>
+
+    <!--more_coffee-->
+    <string name="more_coffee">You cannot have more than 100 coffee. There arent resource for the bar. Sim puvrid!!!</string>
+
+    <!--few coffe-->
+    <string name="few_coffee">You cannot have less than 1 coffee</string>
+</resources>

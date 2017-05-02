@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_gym"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.researchlink.dfp.researchlink.Gym">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="La resistenza fisica"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="La resistenza è quella capacità fisica che permette di sostenere un determinato sforzo il più a lungo possibile. Tale abilità rispecchia l'efficienza dei sistemi energetici implicati nell'esecuzione del gesto motorio; per essere eseguito, infatti, qualsiasi movimento richiede una certa quantità di ATP (moneta energetica dell'organismo) distribuita in un certo lasso di tempo. Avere più energia a disposizione significa mantenere più a lungo lo sforzo senza cali prestativi; in poche parole, energia è sinonimo non solo di potenza, ma anche di resistenza."
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textSize="15dp"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/maratoneta"
+            android:layout_below="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="10dp"
+            android:layout_margin="20dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cento"
+                android:padding="20dp"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/sprinter"
+            android:layout_below="@+id/description"
+            android:layout_toRightOf="@+id/maratoneta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="10dp"
+            android:layout_margin="20dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fondo"
+                android:padding="28dp"/>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/titletwo"
+            android:layout_below="@+id/sprinter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipi di resistenza"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/description2"
+            android:layout_below="@+id/titletwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="La resistenza, intesa come capacità di protrarre nel tempo un'attività fisica più o meno impegnativa, può riguardare un ristretto gruppo muscolare ed i relativi substrati energetici locali (resistenza muscolare) o coinvolgere importanti masse muscolari. Vi sono diverse espressioni della resistenza:"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:textSize="15dp"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/generale"
+            android:layout_below="@+id/description2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="10dp"
+            android:layout_margin="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/resistenza1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Generale"
+                android:padding="16dp"
+                android:textAlignment="center"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/descrizionegenerale"
+                android:layout_below="@+id/resistenza1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="capacità di sostenere uno sforzo di carattere generale, spesso lontano dal gesto atletico per il quale si sta allenando la resistenza. L'esempio più comune è la corsa."
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textSize="15dp"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/specifica"
+            android:layout_below="@+id/generale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="10dp"
+            android:layout_margin="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/descrizionespecifica"
+                    android:layout_below="@+id/resistenza2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="capacità di sostenere uno sforzo molto vicino a quello di gara."
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/resistenza2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Speciale"
+                    android:padding="16dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/ps"
+            android:layout_below="@+id/specifica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="La resistenza generale, al contrario della speciale, è importante per tutti, anche per chi non pratica attività fisica con ambizioni agonistiche (per chi le ha è la base su cui costruire i diversi tipi di resistenza specifica). L'organismo umano, infatti, per sua natura ha bisogno di muoversi e a tal proposito non c'è nulla di meglio dell'esercizio fisico regolare; se questa possibilità gli viene negata, presto o tardi, si ammala."
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:textSize="15dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/forza"
+            android:layout_below="@+id/ps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="10dp"
+            android:layout_margin="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/descrizioneforza"
+                    android:layout_below="@+id/titlethree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="capacità di opporsi ad una resistenza statica o dinamica quanto più a lungo possibile."
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/titlethree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forza"
+                    android:padding="16dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/velocità"
+            android:layout_below="@+id/forza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="10dp"
+            android:layout_margin="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/descrizionevelocità"
+                    android:layout_below="@+id/titlefourth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="capacità di sostenere una velocità massimale o submassimale per tempi relativamente prolungati (8 - 45 secondi)."
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/titlefourth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Velocità"
+                    android:padding="16dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/ps2"
+            android:layout_below="@+id/velocità"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="la resistenza alla forza è strettamente correlata ai sistemi di produzione energetica.
+            La resistenza alla velocità, che presuppone una buona forza elastico reattiva, è importante in un attività come i centometri: dopo 5 o 6 secondi dalla partenza, infatti, l'atleta ha esaurito le riserve di ATP e deve pertanto affidarsi al metabolismo anaerobico lattacido(produzione ATP).
+            Dal punto di vista metabolico, la resistenza può essere classificata in relazione al sistema energetico coinvolto nell'espletamento dello sforzo. Un'attività fisica con durata superiore ai 10 minuti, di norma,  coinvolge sempre in maniera importante il sistema cardio-respiratorio, costituendo così un'attività aerobica con consumo di glicogeno muscolare ed epatico, e grassi; al contrario, le attività di breve durata richiedono una resistenza di tipo anaerobico, nella quale gioca un ruolo importante la disponibilità di glicogeno nei muscoli e nel fegato, i sistemi di smaltimento dell'acido lattico e le riserve muscolari di fosfocreatina."
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/allenamento"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ps2"
+            android:layout_centerHorizontal="true"
+            android:text="Allenamento"
+            android:theme="@style/AppTheme.Button"
+            android:onClick="allenamento"/>
+
+    </RelativeLayout>
+
+</ScrollView>
